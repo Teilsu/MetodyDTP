@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MetodyDTP</title>
+  <style>
+    :root{
+      --bg:#07140a;
+      --panel:#0c1f12;
+      --muted:#9fc8a7;
+      --accent:#6aff9c;
+      --glass: rgba(255,255,255,0.03);
+    }
+    html,body{height:100%;}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #e6eef6;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 12px;
+}
+
+.card{
+  background:linear-gradient(180deg,var(--panel), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow:0 6px 24px rgba(2,6,23,0.6);
+  padding:28px;
+  border-radius:12px;
+  width:100%;
+  max-width:none;
+}
+h1{ margin:0 0 15px 0;
+  font-size:18px;
+  font-weight:600;
+  text-align:left;
+  color:#e6eef6;
+}
+p.lead{ margin:0; color:var(--muted); text-align:left;}
+details{
+  background:var(--glass);
+  border:1px solid rgba(255,255,255,0.03);
+  padding:12px 14px;
+  border-radius:8px;
+  width:100%;
+  box-sizing:border-box;
+}
+summary{
+  list-style:none;
+  cursor:pointer;
+  outline:none;
+  user-select:text; -webkit-user-select:text; -moz-user-select:text;
+  font-weight:600;
+  margin-top:0;
+  display:block;
+  width:100%;
+}
+summary::-webkit-details-marker{display:none}
+.link{
+  display:inline-block;
+  margin-top:4px;
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.04);
+  background:rgba(255,255,255,0.02);
+  font-weight:500;
+}
+.note{font-size:13px;color:var(--muted);margin-top:8px}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+
+    <!-- ============================= -->
+    <!-- TEMPLATE DO KOPIOWANIA BUTTONÓW -->
+    <!--
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">TYTUŁ</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="LEWY_OBRAZEK_URL" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="PRAWY_OBRAZEK_URL" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="LINK_DO_FILMU" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    -->
+    <!-- ============================= -->
+
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">Laser / Engraving</strong>
+          
+        </summary>
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+  <img src="img/laser1.png" alt="Piesek" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+  <img src="img/laser2.png" alt="Piesek2" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+</div>
+
+<!-- FILM NA ŚRODKU -->
+<div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+  <a href="https://www.youtube.com/shorts/HYz0ipzEnWE" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+    <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+      <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+    </div>
+  </a>
+</div>
+
+</details>
+    </div>
+
+    <!-- ============================= -->
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">Tampodruk / Padprint</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="img/tampo1.png" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="img/tampo2.png" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="https://www.youtube.com/shorts/3tTWvBg5nA8" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    <!-- ============================= -->
+	
+    <!-- ============================= -->
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">MR / Screenprint / Sitodruk</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="img/sito_duze1.png" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="img/sito_duze2.png" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="https://www.youtube.com/shorts/RZ7Me-XhYHw" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    <!-- ============================= -->
+
+    <!-- ============================= -->
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">GPE / Sitodruk mały</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="img/sito_male1.png" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="img/sito_male2.png" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="https://www.youtube.com/shorts/5LTlbFubt90" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    <!-- ============================= -->
+	
+    <!-- ============================= -->
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">GPE / Sitodruk na okrągło</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="img/sito_okraglo1.png" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="img/sito_okraglo2.png" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="https://www.youtube.com/shorts/MoUuS_holm8" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    <!-- ============================= -->
+	
+    <!-- ============================= -->
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">Transfer</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="img/tr1.png" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="img/tr2.png" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="https://www.youtube.com/shorts/L-6DqhWiZyo" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    <!-- ============================= -->
+	
+    <!-- ============================= -->
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">Deboss</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="img/deboss1.png" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="img/deboss2.png" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="https://www.youtube.com/shorts/fYYyA4NVobs" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    <!-- ============================= -->
+	
+    <!-- ============================= -->
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">Hot-stamping</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="img/deboss1.png" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="img/deboss2.png" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="https://www.youtube.com/shorts/19mceqiNSkU" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    <!-- ============================= -->
+	
+    <!-- ============================= -->
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">Haft / Embroidery</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="img/haft1.png" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="img/haft2.png" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="https://www.youtube.com/shorts/QaoxoOfi1rE" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    <!-- ============================= -->
+	
+    <!-- ============================= -->
+    <div class="item">
+      <details class="spoiler">
+        <summary>
+          <strong class="title">Druk cyfrowy / Digital print</strong>
+        </summary>
+
+        <div style="margin-top:10px; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-start; padding:10px; gap:0;">
+          <img src="img/digital1.png" alt="Lewy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+          <img src="img/digital2.png" alt="Prawy" style="max-width:48%; width:auto; max-height:600px; object-fit:contain; border-radius:8px; display:block;">
+        </div>
+
+        <div style="margin-top:20px; display:flex; justify-content:center; width:100%;">
+          <a href="https://www.youtube.com/shorts/twdCybSEVKw" target="_blank" style="position:relative; display:block; width:560px; max-width:90%;">
+            <img src="https://img.youtube.com/vi/ID_FILMU/hqdefault.jpg" alt="Miniaturka filmu" style="width:100%; border-radius:12px; display:block;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; background:rgba(0,0,0,0.6); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              <div style="width:0; height:0; border-left:26px solid white; border-top:16px solid transparent; border-bottom:16px solid transparent;"></div>
+            </div>
+          </a>
+        </div>
+
+      </details>
+    </div>
+    <!-- ============================= -->
+	
+  </main>
+</body>
+</html>
